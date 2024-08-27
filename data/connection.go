@@ -5,7 +5,7 @@ import (
 	"gorm.io/gorm"
 )
 
-func connect() {
+func Connect() {
 	dsn := "root:root@/auth"
 	_, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {

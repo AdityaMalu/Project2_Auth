@@ -2,11 +2,11 @@ package main
 
 import (
     "github.com/gofiber/fiber/v2"
-	"github.com/AdityaMalu/Project2_Login_Auth/data"
+	"github.com/AdityaMalu/auth/data"
 )
 
 func main() { 
-	data.connect()
+    data.Connect()
 
     app := fiber.New()
     app.Get("/", func(c *fiber.Ctx) error {
